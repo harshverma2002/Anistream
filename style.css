@@ -378,7 +378,9 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    font-family: 'Baloo Bhai 2';
+    font-weight: bolder;
+
     margin:auto;
     margin-top: 17vh;
     
@@ -391,8 +393,8 @@ footer{
 
 #login-heading{
     color: rgb(64, 124, 209);
-    font-family: 'Baloo Bhai 2';
-    font-weight: bolder;
+    /* font-family: 'Baloo Bhai 2';
+    font-weight: bolder; */
     font-size: 40px;
     margin-top: 50px;
     
@@ -407,7 +409,7 @@ footer{
     margin-top:50px;
     background-color: rgb(64, 124, 209);
     color:white;
-    font-family: 'Baloo Bhai 2';
+    /* font-family: 'Baloo Bhai 2'; */
     border-style: none;
     width:170px;
     height:25px;
@@ -421,5 +423,38 @@ footer{
     text-decoration: none;
 }
 
+@media screen and (min-width:380px) and (max-width:420px) {
+    .login-box{
+        height: 540px;
+        width: 300px;
+    }
+}
 
+@media screen and (min-width:450px) and (max-width:900px) {
+    .login-box{
+        height: 670px;
+        width: 490px;
+    }
+
+    #login-heading{
+        font-size: 80px;
+    }
+
+    .box-login{
+        height:50px;
+        width:350px;
+    }
+
+    #submit-btn{
+        width:350px;
+        height:50px;
+        font-size: 20px;
+    }
+    
+    #forgot-pass a{
+        font-size:20px;
+    }
+
+
+}
 
