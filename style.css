@@ -1,0 +1,437 @@
+@font-face {
+    font-family: 'Baloo Bhai 2';src: url('fonts/BalooBhai2-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Yanone Kaffeesatz' ;src: url('fonts/YanoneKaffeesatz-VariableFont_wght.ttf');
+}
+/* ---------------------------------------Universal----------------------------------- */
+
+header{
+    position: sticky;
+    top:0px;
+    z-index: 1;
+
+    background-color: rgb(25, 102, 211);
+    font-family: 'Baloo Bhai 2', cursive;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    color: white;
+    height: 80px;
+}
+.logo{
+    display: inline-block;
+    position: relative;
+    top:10px;
+    left:10px;
+}
+
+.logo div{
+    display: inline-block;
+    position: relative;
+    bottom:20px;
+
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 35px;
+}
+
+.logo img{
+   width: 60px;
+   height: 60px;
+}
+
+.logo :hover{
+    cursor:pointer;
+}
+
+.navbar{
+    display: inline-block;
+    
+    font-weight: bolder;
+    
+    margin-left: 200px;
+
+    position: relative;
+    bottom:15px;
+}
+
+
+.navbar ul li{
+    display: inline-block;
+    margin: 0px 40px;
+}
+
+.navbar li a:hover{
+    text-decoration: underline;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.userarea{
+    position: relative;
+    bottom: 8px;
+
+    float: right;
+    margin-top: 30px;
+    margin-right: 40px;
+  
+}
+
+.userarea button{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: bolder;
+    color: rgb(25, 102, 211);
+    background-color: white;
+    font-size: 18px;
+
+    border-radius: 15px;
+    border-width: 0px;
+    padding: 5px 20px;
+}
+
+#btn-login{
+    margin-right: 15px;
+}
+
+.userarea button:hover{
+    cursor:pointer;
+    color: white;
+    background-color: rgb(7, 89, 204);
+}
+
+
+/*<--------------------------------- HOME --------------------------------------> */
+
+#latest-banner{
+    background-color: black;
+    height: 500px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: 0px;
+}
+
+#lb-heading{
+    display: block;
+    color: white;
+    text-align: center;
+    font-family: 'Baloo Bhai 2';
+    font-size:30px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+#lb-heading:hover{
+    cursor:default;
+}
+
+#latest-banner img{
+    margin-left: 650px;
+    height:380px;
+}
+
+#latest-banner img:hover{
+    cursor:pointer;
+}
+
+#pop-anime{
+    background-color: rgb(64, 124, 209);
+    padding-top: 0px;
+    margin-left:-8px;
+    margin-right:-8px;
+    margin-bottom: 30px;
+}
+
+#pop-anime span{
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+    top:20px;
+
+    text-align: center;
+    font-family: 'Baloo Bhai 2';
+    color:white;
+    font-size: 40px;
+    font-weight: bolder;
+    
+}
+
+.pop-anime-heading-divider{
+    border:2px solid white;
+    background-color:white;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.card-img{
+    display: inline-block;
+    box-shadow: 3px 3px 10px 2px #000000;
+    height: 250px;
+}
+
+.card-img:hover{
+    cursor: pointer;
+    box-shadow: none;
+}
+
+#pop-anime img{
+    height: 250px;
+    width : 400px;
+}
+
+.group1-img{
+    margin-left:40px;
+    margin-right:40px;
+}
+
+.grp1-titles{
+    display: block;
+}
+.card-img-titles-1{
+    display: inline-block;
+    margin-left:180px;
+    margin-right:180px;
+    margin-bottom: 50px;
+
+    font-family: 'Baloo Bhai 2';
+    font-size: 25px;
+    color:white;
+    font-weight: bolder;
+}
+
+.card-img-titles-1:hover{
+    cursor: pointer;
+}
+
+.group2-img{
+    margin-left:260px;
+}
+
+#naruto-card{
+    margin-left:100px;
+}
+
+.grp2-titles{
+    display: block;
+}
+
+.card-img-titles-2{
+    display: inline-block;
+    margin-left:350px;
+    margin-right:350px;
+    margin-bottom: 20px;
+
+    font-family: 'Baloo Bhai 2';
+    font-size: 25px;
+    color:white;
+    font-weight: bolder;
+}
+
+.card-img-titles-2:hover{
+    cursor: pointer;
+}
+
+.naruto-title{
+    margin-left:30px;
+}
+
+#plans{
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+    top:20px;
+
+    text-align: center;
+    font-family: 'Baloo Bhai 2';
+    color:rgb(64, 124, 209);
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#plans:hover{
+    cursor:default;
+}
+
+#plans-heading-divider{
+    border:2px solid rgb(64, 124, 209);
+    background-color:rgb(64, 124, 209);
+    border-radius: 10px;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.pricing li{
+    list-style-type:circle;
+}
+
+.price{
+    text-align: center;
+    font-weight: bold;
+}
+
+.pricing{
+    font-family: 'Baloo Bhai 2';
+    color:rgb(64, 124, 209);
+    font-size: 25px;
+    font-weight:lighter;
+    margin-bottom: 100px;
+}
+
+.plan-box{
+    display:inline-block;
+    margin:0px 65px;
+    border-radius: 20px;
+    padding:30px 5px;
+    box-shadow: 3px 3px 10px 1px #888888;
+}
+
+.plan-box:hover{
+    cursor: pointer;
+    background-color:rgb(64, 124, 209);
+    color:white;
+    box-shadow: none;
+}
+
+.heads{
+    text-align: center;
+    font-size: 45px;
+}
+
+#planbox-heading-divider{
+    border:2px solid rgb(64, 124, 209);
+    background-color:rgb(64, 124, 209);
+    border-radius: 10px;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+footer{
+    background-color:rgb(25, 102, 211);
+    height:60px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -16px;
+}
+
+.f-logo{
+    display: inline-block;
+    position: relative;
+    top:10px;
+    left:10px;
+}
+
+.f-logo div{
+    display: inline-block;
+    position: relative;
+    bottom:10px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+.f-logo img{
+   width: 40px;
+   height: 40px;
+}
+
+.f-logo :hover{
+    cursor:pointer;
+}
+
+.misc-links{
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    left:20px;
+    bottom: 2px;
+}
+
+.misc-links ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0px 20px;
+}
+
+.misc-links a{
+    text-decoration: none;
+    color: white;
+}
+
+.misc-links a:hover{
+    text-decoration: underline;
+}
+
+/* <------------------------------ login -----------------------------------------------> */
+
+#login-body{
+   background-color: rgb(64, 124, 209);
+}
+
+.login-box{
+   display: inline-block;
+   position: relative;
+   top:130px;
+   left:600px;
+   background-color: white;
+
+   color: rgb(64, 124, 209);
+   font-family: 'Baloo Bhai 2';
+   font-size: 45px;
+   font-weight: bolder;
+
+   height:400px;
+   width:300px;
+
+   box-shadow: 3px 3px 20px 2px black;
+}
+
+.box-login{
+    width:250px;
+    position: relative;
+    left: 20px;
+    height: 40px;
+
+    border:1px solid gray;
+    border-radius: 30px;
+  
+}
+
+#login-heading{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#login-heading:hover{
+    cursor:default;
+}
+
+#submit-btn{
+    position: relative;
+    left: 50px;
+
+    background-color: rgb(64, 124, 209);
+    border-radius: 25px;
+    border-style: none;
+    width: 200px;
+    height: 35px;
+
+    font-family: 'Baloo Bhai 2';
+    color: white;
+    font-weight: bolder;
+    font-size:20px;
+}
+
+#submit-btn:hover{
+    cursor:pointer;
+    color: rgb(64, 124, 209);
+    background-color: white;
+    border-style: solid;
+    
+}
