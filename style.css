@@ -17,6 +17,11 @@
     border-style: none;
 }
 
+/*******************************************************************************************************************************************************************/
+/*-------------------------------------------- index.html---------------------------------- */
+
+
+
 /*********************************************************************************************************************************************************************
                                 -----------------NAVBAR--------------
 *********************************************************************************************************************************************************************/
@@ -334,4 +339,64 @@ footer ul li a{
 
 footer ul li a:hover{
     text-decoration: underline;
+}
+
+/***************************************************FOOTER  ENDS*******************************************************************************/
+
+
+/*******************************************************************************************************************************************************************/
+/*-------------------------------------------- login.html---------------------------------- */
+
+
+#login-body {
+    background-color: var(--prim-color);
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:var(--prim-font);
+    font-weight: bolder;
+
+    margin: auto;
+    margin-top: 17vh;
+
+    background-color: white;
+    width: 250px;
+    height: 450px;
+
+    border-radius: 25px;
+}
+
+#login-heading {
+    color: var(--prim-color);
+    /* font-family:'Baloo Bhai 2';
+    font-weight: bolder; */
+    font-size: 40px;
+    margin-top: 50px;
+
+}
+
+.box-login {
+    margin-top: 30px;
+    height: 25px;
+}
+
+#submit-btn {
+    margin-top: 50px;
+    background-color: var(--prim-color);
+    color: white;
+    /* font-family:'Baloo Bhai 2'; */
+    border-style: none;
+    width: 170px;
+    height: 25px;
+    margin-bottom: 20px;
+}
+
+#forgot-pass a {
+    font-family:var(--prim-font);
+    color: var(--prim-color);
+    font-size: 15px;
+    text-decoration: none;
 }
