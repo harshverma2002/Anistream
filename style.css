@@ -1,90 +1,105 @@
 @font-face {
-    font-family: 'Baloo Bhai 2';src: url('fonts/BalooBhai2-VariableFont_wght.ttf');
+    font-family:'Baloo Bhai 2';
+    src: url('fonts/BalooBhai2-VariableFont_wght.ttf');
 }
-@font-face {
-    font-family: 'Yanone Kaffeesatz' ;src: url('fonts/YanoneKaffeesatz-VariableFont_wght.ttf');
-}
-/* ---------------------------------------Universal----------------------------------- */
 
-header{
+@font-face {
+    font-family: 'Yanone Kaffeesatz';
+    src: url('fonts/YanoneKaffeesatz-VariableFont_wght.ttf');
+}
+
+:root {
+    --prim-color: rgb(64, 124, 209);
+    --nav-prim-color: rgb(25, 102, 211);
+    --prim-font:'Baloo Bhai 2';
+}
+
+/* ---------------------------------------index.html------------------------------------------------------- */
+
+/*--------------------------------------------------------------------------------------*/
+                                         /* NAVBAR -starts*/
+/*--------------------------------------------------------------------------------------*/
+
+header {
     position: sticky;
-    top:0px;
+    top: 0px;
     z-index: 1;
 
-    background-color: rgb(25, 102, 211);
-    font-family: 'Baloo Bhai 2', cursive;
+    background-color: var(--nav-prim-color);
+    font-family: var(--prim-font);
     margin-top: -8px;
     margin-left: -8px;
     margin-right: -8px;
     color: white;
     height: 80px;
 }
-.logo{
+
+.logo {
     display: inline-block;
     position: relative;
-    top:10px;
-    left:10px;
+    top: 10px;
+    left: 10px;
 }
 
-.logo div{
+.logo div {
     display: inline-block;
     position: relative;
-    bottom:20px;
+    bottom: 20px;
 
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 35px;
 }
 
-.logo img{
-   width: 60px;
-   height: 60px;
+.logo img {
+    width: 60px;
+    height: 60px;
 }
 
-.logo :hover{
-    cursor:pointer;
+.logo :hover {
+    cursor: pointer;
 }
 
-.navbar{
+.navbar {
     display: inline-block;
-    
+
     font-weight: bolder;
-    
+
     margin-left: 200px;
 
     position: relative;
-    bottom:15px;
+    bottom: 15px;
 }
 
 
-.navbar ul li{
+.navbar ul li {
     display: inline-block;
     margin: 0px 40px;
 }
 
-.navbar li a:hover{
+.navbar li a:hover {
     text-decoration: underline;
 }
 
-.navbar li a{
+.navbar li a {
     text-decoration: none;
     color: white;
     font-size: 25px;
 }
 
-.userarea{
+.userarea {
     position: relative;
     bottom: 8px;
 
     float: right;
     margin-top: 30px;
     margin-right: 40px;
-  
+
 }
 
-.userarea button{
-    font-family: 'Baloo Bhai 2', cursive;
+.userarea button {
+    font-family: var(--prim-font);
     font-weight: bolder;
-    color: rgb(25, 102, 211);
+    color: var(--nav-prim-color);
     background-color: white;
     font-size: 18px;
 
@@ -93,20 +108,23 @@ header{
     padding: 5px 20px;
 }
 
-#btn-login{
+#btn-login {
     margin-right: 15px;
 }
 
-.userarea button:hover{
-    cursor:pointer;
+.userarea button:hover {
+    cursor: pointer;
     color: white;
     background-color: rgb(7, 89, 204);
 }
 
 
-/*<--------------------------------- HOME --------------------------------------> */
+/*--------------------------------------------------------------------------------------*/
+                                                   /* NAVBAR - ends*/
+/*--------------------------------------------------------------------------------------*/
 
-#latest-banner{
+
+#latest-banner {
     background-color: black;
     height: 500px;
     margin-left: -8px;
@@ -114,347 +132,347 @@ header{
     margin-bottom: 0px;
 }
 
-#lb-heading{
+#lb-heading {
     display: block;
     color: white;
     text-align: center;
-    font-family: 'Baloo Bhai 2';
-    font-size:30px;
+    font-family: var(--prim-font);
+    font-size: 30px;
     padding-top: 15px;
     padding-bottom: 20px;
 }
 
-#lb-heading:hover{
-    cursor:default;
+#lb-heading:hover {
+    cursor: default;
 }
 
-#latest-banner img{
+#latest-banner img {
     margin-left: 650px;
-    height:380px;
+    height: 380px;
 }
 
-#latest-banner img:hover{
-    cursor:pointer;
+#latest-banner img:hover {
+    cursor: pointer;
 }
 
-#pop-anime{
-    background-color: rgb(64, 124, 209);
+#pop-anime {
+    background-color: var(--prim-color);
     padding-top: 0px;
-    margin-left:-8px;
-    margin-right:-8px;
+    margin-left: -8px;
+    margin-right: -8px;
     margin-bottom: 30px;
 }
 
-#pop-anime span{
+#pop-anime span {
     display: block;
     margin-bottom: 20px;
     position: relative;
-    top:20px;
+    top: 20px;
 
     text-align: center;
-    font-family: 'Baloo Bhai 2';
-    color:white;
+    font-family:var(--prim-font);
+    color: white;
     font-size: 40px;
     font-weight: bolder;
-    
+
 }
 
-.pop-anime-heading-divider{
-    border:2px solid white;
-    background-color:white;
+.pop-anime-heading-divider {
+    border: 2px solid white;
+    background-color: white;
     border-radius: 10px;
     width: 50%;
     margin: auto;
     margin-bottom: 100px;
 }
 
-.card-img{
+.card-img {
     display: inline-block;
     box-shadow: 3px 3px 10px 2px #000000;
     height: 250px;
 }
 
-.card-img:hover{
+.card-img:hover {
     cursor: pointer;
     box-shadow: none;
 }
 
-#pop-anime img{
+#pop-anime img {
     height: 250px;
-    width : 400px;
+    width: 400px;
 }
 
-.group1-img{
-    margin-left:40px;
-    margin-right:40px;
+.group1-img {
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
-.grp1-titles{
+.grp1-titles {
     display: block;
 }
-.card-img-titles-1{
+
+.card-img-titles-1 {
     display: inline-block;
-    margin-left:180px;
-    margin-right:180px;
+    margin-left: 180px;
+    margin-right: 180px;
     margin-bottom: 50px;
 
-    font-family: 'Baloo Bhai 2';
+    font-family:var(--prim-font);
     font-size: 25px;
-    color:white;
+    color: white;
     font-weight: bolder;
 }
 
-.card-img-titles-1:hover{
+.card-img-titles-1:hover {
     cursor: pointer;
 }
 
-.group2-img{
-    margin-left:260px;
+.group2-img {
+    margin-left: 260px;
 }
 
-#naruto-card{
-    margin-left:100px;
+#naruto-card {
+    margin-left: 100px;
 }
 
-.grp2-titles{
+.grp2-titles {
     display: block;
 }
 
-.card-img-titles-2{
+.card-img-titles-2 {
     display: inline-block;
-    margin-left:350px;
-    margin-right:350px;
+    margin-left: 350px;
+    margin-right: 350px;
     margin-bottom: 20px;
 
-    font-family: 'Baloo Bhai 2';
+    font-family:var(--prim-font);
     font-size: 25px;
-    color:white;
+    color: white;
     font-weight: bolder;
 }
 
-.card-img-titles-2:hover{
+.card-img-titles-2:hover {
     cursor: pointer;
 }
 
-.naruto-title{
-    margin-left:30px;
+.naruto-title {
+    margin-left: 30px;
 }
 
-#plans{
+#plans {
     display: block;
     margin-bottom: 20px;
     position: relative;
-    top:20px;
+    top: 20px;
 
     text-align: center;
-    font-family: 'Baloo Bhai 2';
-    color:rgb(64, 124, 209);
+    font-family:var(--prim-font);
+    color: var(--prim-color);
     font-size: 40px;
     font-weight: bolder;
 }
 
-#plans:hover{
-    cursor:default;
+#plans:hover {
+    cursor: default;
 }
 
-#plans-heading-divider{
-    border:2px solid rgb(64, 124, 209);
-    background-color:rgb(64, 124, 209);
+#plans-heading-divider {
+    border: 2px solid var(--prim-color);
+    background-color: var(--prim-color);
     border-radius: 10px;
     width: 30%;
     margin: auto;
     margin-bottom: 100px;
 }
 
-.pricing li{
-    list-style-type:circle;
+.pricing li {
+    list-style-type: circle;
 }
 
-.price{
+.price {
     text-align: center;
     font-weight: bold;
 }
 
-.pricing{
-    font-family: 'Baloo Bhai 2';
-    color:rgb(64, 124, 209);
+.pricing {
+    font-family:var(--prim-font);
+    color: var(--prim-color);
     font-size: 25px;
-    font-weight:lighter;
+    font-weight: lighter;
     margin-bottom: 100px;
 }
 
-.plan-box{
-    display:inline-block;
-    margin:0px 65px;
+.plan-box {
+    display: inline-block;
+    margin: 0px 65px;
     border-radius: 20px;
-    padding:30px 5px;
+    padding: 30px 5px;
     box-shadow: 3px 3px 10px 1px #888888;
 }
 
-.plan-box:hover{
+.plan-box:hover {
     cursor: pointer;
-    background-color:rgb(64, 124, 209);
-    color:white;
+    background-color: var(--prim-color);
+    color: white;
     box-shadow: none;
 }
 
-.heads{
+.heads {
     text-align: center;
     font-size: 45px;
 }
 
-#planbox-heading-divider{
-    border:2px solid rgb(64, 124, 209);
-    background-color:rgb(64, 124, 209);
+#planbox-heading-divider {
+    border: 2px solid var(--prim-color);
+    background-color: var(--prim-color);
     border-radius: 10px;
     width: 85%;
     margin: auto;
     margin-bottom: 50px;
 }
 
-footer{
-    background-color:rgb(25, 102, 211);
-    height:60px;
+footer {
+    background-color: var(--nav-prim-color);
+    height: 60px;
     margin-left: -8px;
     margin-right: -8px;
     margin-bottom: -16px;
 }
 
-.f-logo{
+.f-logo {
     display: inline-block;
     position: relative;
-    top:10px;
-    left:10px;
+    top: 10px;
+    left: 10px;
 }
 
-.f-logo div{
+.f-logo div {
     display: inline-block;
     position: relative;
-    bottom:10px;
+    bottom: 10px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 25px;
     color: white;
 }
 
-.f-logo img{
-   width: 40px;
-   height: 40px;
+.f-logo img {
+    width: 40px;
+    height: 40px;
 }
 
-.f-logo :hover{
-    cursor:pointer;
+.f-logo :hover {
+    cursor: pointer;
 }
 
-.misc-links{
+.misc-links {
     display: inline-block;
     text-decoration: none;
     position: relative;
-    left:20px;
+    left: 20px;
     bottom: 2px;
 }
 
-.misc-links ul li{
+.misc-links ul li {
     display: inline-block;
     list-style-type: none;
     margin: 0px 20px;
 }
 
-.misc-links a{
+.misc-links a {
     text-decoration: none;
     color: white;
 }
 
-.misc-links a:hover{
+.misc-links a:hover {
     text-decoration: underline;
 }
 
-/* <------------------------------ login -----------------------------------------------> */
+/* <------------------------------ login.html -----------------------------------------------> */
 
-#login-body{
-   background-color: rgb(64, 124, 209);
+#login-body {
+    background-color: var(--prim-color);
 }
 
-.login-box{
+.login-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Baloo Bhai 2';
+    font-family:var(--prim-font);
     font-weight: bolder;
 
-    margin:auto;
+    margin: auto;
     margin-top: 17vh;
-    
+
     background-color: white;
-    width:250px;
-    height:450px;
+    width: 250px;
+    height: 450px;
 
     border-radius: 25px;
 }
 
-#login-heading{
-    color: rgb(64, 124, 209);
-    /* font-family: 'Baloo Bhai 2';
+#login-heading {
+    color: var(--prim-color);
+    /* font-family:'Baloo Bhai 2';
     font-weight: bolder; */
     font-size: 40px;
     margin-top: 50px;
-    
+
 }
 
-.box-login{
-    margin-top:30px;
-    height:25px;
+.box-login {
+    margin-top: 30px;
+    height: 25px;
 }
 
-#submit-btn{
-    margin-top:50px;
-    background-color: rgb(64, 124, 209);
-    color:white;
-    /* font-family: 'Baloo Bhai 2'; */
+#submit-btn {
+    margin-top: 50px;
+    background-color: var(--prim-color);
+    color: white;
+    /* font-family:'Baloo Bhai 2'; */
     border-style: none;
-    width:170px;
-    height:25px;
+    width: 170px;
+    height: 25px;
     margin-bottom: 20px;
 }
 
-#forgot-pass a{
-    font-family: 'Baloo Bhai 2';
-    color:rgb(64, 124, 209);
-    font-size:15px;
+#forgot-pass a {
+    font-family:var(--prim-font);
+    color: var(--prim-color);
+    font-size: 15px;
     text-decoration: none;
 }
 
 @media screen and (min-width:380px) and (max-width:420px) {
-    .login-box{
+    .login-box {
         height: 540px;
         width: 300px;
     }
 }
 
 @media screen and (min-width:450px) and (max-width:900px) {
-    .login-box{
+    .login-box {
         height: 670px;
         width: 490px;
     }
 
-    #login-heading{
+    #login-heading {
         font-size: 80px;
     }
 
-    .box-login{
-        height:50px;
-        width:350px;
+    .box-login {
+        height: 50px;
+        width: 350px;
     }
 
-    #submit-btn{
-        width:350px;
-        height:50px;
+    #submit-btn {
+        width: 350px;
+        height: 50px;
         font-size: 20px;
     }
-    
-    #forgot-pass a{
-        font-size:20px;
+
+    #forgot-pass a {
+        font-size: 20px;
     }
 
 
 }
-
