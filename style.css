@@ -1,478 +1,337 @@
-@font-face {
-    font-family:'Baloo Bhai 2';
-    src: url('fonts/BalooBhai2-VariableFont_wght.ttf');
-}
+/* Import all fonts */
+@font-face {font-family:'Baloo Bhai 2';src: url('fonts/BalooBhai2-VariableFont_wght.ttf');}
+@font-face {font-family: 'Yanone Kaffeesatz';src: url('fonts/YanoneKaffeesatz-VariableFont_wght.ttf');}
 
-@font-face {
-    font-family: 'Yanone Kaffeesatz';
-    src: url('fonts/YanoneKaffeesatz-VariableFont_wght.ttf');
-}
-
-:root {
-    --prim-color: rgb(64, 124, 209);
-    --nav-prim-color: rgb(25, 102, 211);
+/* All variables */
+:root{
     --prim-font:'Baloo Bhai 2';
+    --nav-color:rgb(25, 102, 211);
+    --prim-color:rgb(64, 124, 209);
+    --nav-title-font:'Yanone Kaffeesatz';
 }
 
-/* ---------------------------------------index.html------------------------------------------------------- */
+/* CSS reset */
+*{
+    margin:0;
+    padding:0;
+    border-style: none;
+}
 
-/*--------------------------------------------------------------------------------------*/
-                                         /* NAVBAR -starts*/
-/*--------------------------------------------------------------------------------------*/
+/*********************************************************************************************************************************************************************
+                                -----------------NAVBAR--------------
+*********************************************************************************************************************************************************************/
 
-header {
-    position: sticky;
-    top: 0px;
-    z-index: 1;
+/* Navbar-box */
 
-    background-color: var(--nav-prim-color);
-    font-family: var(--prim-font);
-    margin-top: -8px;
-    margin-left: -8px;
-    margin-right: -8px;
-    color: white;
+#navbar{
+    display: flex;
+    align-items: center;
+    background-color: var(--nav-color);
     height: 80px;
+    width: 100%;
+
+    position: sticky;
+    top:0px;
 }
 
-.logo {
-    display: inline-block;
-    position: relative;
-    top: 10px;
-    left: 10px;
-}
-
-.logo div {
-    display: inline-block;
-    position: relative;
-    bottom: 20px;
-
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 35px;
-}
-
-.logo img {
+/* navbar-image */
+#navbar img{
+    height:60px;
     width: 60px;
-    height: 60px;
+    margin-left: 20px;
 }
 
-.logo :hover {
-    cursor: pointer;
+#navbar img:hover{cursor:pointer;}
+
+/* navbar-title */
+#navbar div{
+    color: white;
+    font-family:var(--nav-title-font);
+    font-size: 2.0rem;
 }
 
-.navbar {
-    display: inline-block;
+#navbar div:hover{cursor:pointer;}
 
-    font-weight: bolder;
-
-    margin-left: 200px;
-
-    position: relative;
-    bottom: 15px;
+/* navbar-links-container */
+#navbar ul{
+    display: flex;
+    list-style-type: none;
+    margin:auto;
 }
 
-
-.navbar ul li {
-    display: inline-block;
-    margin: 0px 40px;
+/* navbar-links-item-container */
+#navbar ul li{
+    font-size: 1.5rem;
 }
 
-.navbar li a:hover {
+/* navbar-links-item */
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--prim-font);
+    padding: 0px 50px;
+}
+
+#navbar ul li a:hover{
     text-decoration: underline;
 }
 
-.navbar li a {
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-}
-
-.userarea {
-    position: relative;
-    bottom: 8px;
-
-    float: right;
-    margin-top: 30px;
-    margin-right: 40px;
-
-}
-
-.userarea button {
-    font-family: var(--prim-font);
-    font-weight: bolder;
-    color: var(--nav-prim-color);
+/* user-buttons*/
+#navbar a button {
     background-color: white;
-    font-size: 18px;
-
-    border-radius: 15px;
-    border-width: 0px;
-    padding: 5px 20px;
-}
-
-#btn-login {
-    margin-right: 15px;
-}
-
-.userarea button:hover {
-    cursor: pointer;
-    color: white;
-    background-color: rgb(7, 89, 204);
-}
-
-
-/*--------------------------------------------------------------------------------------*/
-                                                   /* NAVBAR - ends*/
-/*--------------------------------------------------------------------------------------*/
-
-
-#latest-banner {
-    background-color: black;
-    height: 500px;
-    margin-left: -8px;
-    margin-right: -8px;
-    margin-bottom: 0px;
-}
-
-#lb-heading {
-    display: block;
-    color: white;
-    text-align: center;
+    margin:0px 20px;
+    padding:3px 15px;
+    border-radius: 25px;
+    font-weight: bolder;
+    font-size: 1.1rem;
     font-family: var(--prim-font);
-    font-size: 30px;
+    color: var(--nav-color);
+    text-decoration: none;
+}
+
+#navbar a button:hover{
+    transition-duration: 0.27s;
+    cursor: pointer;
+    color:white;
+    background-color: black;
+}
+
+
+/************************************************************NAVBAR ENDS*******************************************************************************/
+
+/*********************************************************************************************************************************************************************
+                                ----------------- SLIDESHOW--------------
+*********************************************************************************************************************************************************************/
+
+/* slideshow-container */
+#slideshow-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    width:100%;
+    height: 520px;
+}
+
+/* slideshow-container-heading */
+#slideshow-container div{
+    color: white;
+    font-family: var(--prim-font);
+    font-size: 2rem;
     padding-top: 15px;
     padding-bottom: 20px;
 }
 
-#lb-heading:hover {
-    cursor: default;
+/* slideshow-container-image */
+#slideshow-container img{
+    height:380px;
 }
 
-#latest-banner img {
-    margin-left: 650px;
-    height: 380px;
-}
-
-#latest-banner img:hover {
+#slideshow-container img:hover{
     cursor: pointer;
 }
 
-#pop-anime {
-    background-color: var(--prim-color);
-    padding-top: 0px;
-    margin-left: -8px;
-    margin-right: -8px;
-    margin-bottom: 30px;
-}
+/***************************************************SLIDESHOW ENDS*******************************************************************************/
 
-#pop-anime span {
-    display: block;
-    margin-bottom: 20px;
-    position: relative;
-    top: 20px;
-
-    text-align: center;
-    font-family:var(--prim-font);
-    color: white;
+/*********************************************************************************************************************************************************************
+                                -----------------POPULAR ANIME--------------
+*********************************************************************************************************************************************************************/
+/* The heading */
+#pop-anime-heading{
     font-size: 40px;
+    font-family: var(--prim-font);
     font-weight: bolder;
-
+    color:white;
+    display: block;
+    text-align: center;
 }
 
-.pop-anime-heading-divider {
+/* the horizontal rule */
+#pop-anime-heading-divider{
     border: 2px solid white;
     background-color: white;
     border-radius: 10px;
     width: 50%;
     margin: auto;
+    margin-bottom: 70px;
+}
+
+/* Parent container */
+.popanime-container{
+    background-color: var(--prim-color);
+    padding-top: 40px;
+
+}
+
+/* container which contains the title-blocks */
+.popanime-titles-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* image of title */
+.popanime-titles-container div img{
+    margin: 20px 10px;
+    height: 250px;
+    width:  400px;
+}
+
+.popanime-titles-container div img:hover{
+    transition-duration: 0.4s;
+    cursor:pointer;
+    box-shadow: 5px 5px 10px 5px black;
+}
+
+/* title block : container of a title and its name */
+.title-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:10px 10px;
+}
+
+/* name of show */
+.title-container div{
+    font-family: var(--prim-font);
+    font-size:25px;
+    font-weight: bolder;
+    color:white;
+}
+
+.title-container div:hover{
+    cursor: pointer;
+}
+
+/***************************************************POPULAR ANIME ENDS*******************************************************************************/
+
+/*********************************************************************************************************************************************************************
+                                -----------------PLANS--------------
+*********************************************************************************************************************************************************************/
+
+#plan-heading{
+    font-size: 40px;
+    font-family: var(--prim-font);
+    font-weight: bolder;
+    color:var(--prim-color);
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* the horizontal rule */
+#plans-heading-divider{
+    border: 2px solid var(--prim-color);
+    background-color: var(--prim-color);
+    border-radius: 10px;
+    width: 20%;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+/* Parent container : contains the the plans boxes*/
+.plans-container-parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 100px;
 }
 
-.card-img {
-    display: inline-block;
-    box-shadow: 3px 3px 10px 2px #000000;
-    height: 250px;
+/* plan container : contains the individual plans  */
+.plans-container{
+    box-sizing: border-box;
+    border: 3px solid var(--prim-color);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 1px #888888;
+    margin: 20px 50px;
+    padding: 20px 40px;
+    padding-bottom: 30px;
+    width:290px;
+    color: var(--prim-color);
+    font-family: var(--prim-font);
 }
 
-.card-img:hover {
-    cursor: pointer;
-    box-shadow: none;
+.plans-container:hover{
+    cursor:pointer;
+    transition-duration: 0.25s;
+    color:white;
+    background-color: var(--prim-color);
 }
 
-#pop-anime img {
-    height: 250px;
-    width: 400px;
-}
-
-.group1-img {
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.grp1-titles {
-    display: block;
-}
-
-.card-img-titles-1 {
-    display: inline-block;
-    margin-left: 180px;
-    margin-right: 180px;
-    margin-bottom: 50px;
-
-    font-family:var(--prim-font);
-    font-size: 25px;
-    color: white;
+/* headings of plans */
+#planbox-heading{
+    
+    font-size:45px;
     font-weight: bolder;
+    text-align: center;
 }
 
-.card-img-titles-1:hover {
+/* price of plans */
+#planbox-cost{
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 60px;
+    color: black;
+}
+
+/* list container of specfications */
+.plans-container ul{
+    font-weight:bold;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+/* indivdual specs */
+.plans-container ul li{
+    margin:5px 0px;
+}
+
+/***************************************************PLANS ENDS*******************************************************************************/
+
+/*********************************************************************************************************************************************************************
+                                -----------------FOOTER--------------
+*********************************************************************************************************************************************************************/
+
+footer{
+    display: flex;
+    align-items: center;
+    background-color: var(--nav-color);
+    width:100%;
+}
+
+footer img{
+    height:50px;
+    width: 50px;
+    margin-left: 20px;
+}
+
+footer div{
+    color: white;
+    font-family:var(--nav-title-font);
+    font-size: 1.5rem;
+}
+
+footer img,footer div:hover{
     cursor: pointer;
 }
 
-.group2-img {
-    margin-left: 260px;
-}
-
-#naruto-card {
+footer ul{
+    display:flex;
+    list-style: none;
     margin-left: 100px;
 }
 
-.grp2-titles {
-    display: block;
+footer ul li{
+    padding : 0px 20px;
 }
 
-.card-img-titles-2 {
-    display: inline-block;
-    margin-left: 350px;
-    margin-right: 350px;
-    margin-bottom: 20px;
-
-    font-family:var(--prim-font);
-    font-size: 25px;
-    color: white;
-    font-weight: bolder;
-}
-
-.card-img-titles-2:hover {
-    cursor: pointer;
-}
-
-.naruto-title {
-    margin-left: 30px;
-}
-
-#plans {
-    display: block;
-    margin-bottom: 20px;
-    position: relative;
-    top: 20px;
-
-    text-align: center;
-    font-family:var(--prim-font);
-    color: var(--prim-color);
-    font-size: 40px;
-    font-weight: bolder;
-}
-
-#plans:hover {
-    cursor: default;
-}
-
-#plans-heading-divider {
-    border: 2px solid var(--prim-color);
-    background-color: var(--prim-color);
-    border-radius: 10px;
-    width: 30%;
-    margin: auto;
-    margin-bottom: 100px;
-}
-
-.pricing li {
-    list-style-type: circle;
-}
-
-.price {
-    text-align: center;
+footer ul li a{
+    text-decoration: none;
+    color:white;
+    font-family: var(--prim-font);
     font-weight: bold;
 }
 
-.pricing {
-    font-family:var(--prim-font);
-    color: var(--prim-color);
-    font-size: 25px;
-    font-weight: lighter;
-    margin-bottom: 100px;
-}
-
-.plan-box {
-    display: inline-block;
-    margin: 0px 65px;
-    border-radius: 20px;
-    padding: 30px 5px;
-    box-shadow: 3px 3px 10px 1px #888888;
-}
-
-.plan-box:hover {
-    cursor: pointer;
-    background-color: var(--prim-color);
-    color: white;
-    box-shadow: none;
-}
-
-.heads {
-    text-align: center;
-    font-size: 45px;
-}
-
-#planbox-heading-divider {
-    border: 2px solid var(--prim-color);
-    background-color: var(--prim-color);
-    border-radius: 10px;
-    width: 85%;
-    margin: auto;
-    margin-bottom: 50px;
-}
-
-footer {
-    background-color: var(--nav-prim-color);
-    height: 60px;
-    margin-left: -8px;
-    margin-right: -8px;
-    margin-bottom: -16px;
-}
-
-.f-logo {
-    display: inline-block;
-    position: relative;
-    top: 10px;
-    left: 10px;
-}
-
-.f-logo div {
-    display: inline-block;
-    position: relative;
-    bottom: 10px;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 25px;
-    color: white;
-}
-
-.f-logo img {
-    width: 40px;
-    height: 40px;
-}
-
-.f-logo :hover {
-    cursor: pointer;
-}
-
-.misc-links {
-    display: inline-block;
-    text-decoration: none;
-    position: relative;
-    left: 20px;
-    bottom: 2px;
-}
-
-.misc-links ul li {
-    display: inline-block;
-    list-style-type: none;
-    margin: 0px 20px;
-}
-
-.misc-links a {
-    text-decoration: none;
-    color: white;
-}
-
-.misc-links a:hover {
+footer ul li a:hover{
     text-decoration: underline;
-}
-
-/* <------------------------------ login.html -----------------------------------------------> */
-
-#login-body {
-    background-color: var(--prim-color);
-}
-
-.login-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family:var(--prim-font);
-    font-weight: bolder;
-
-    margin: auto;
-    margin-top: 17vh;
-
-    background-color: white;
-    width: 250px;
-    height: 450px;
-
-    border-radius: 25px;
-}
-
-#login-heading {
-    color: var(--prim-color);
-    /* font-family:'Baloo Bhai 2';
-    font-weight: bolder; */
-    font-size: 40px;
-    margin-top: 50px;
-
-}
-
-.box-login {
-    margin-top: 30px;
-    height: 25px;
-}
-
-#submit-btn {
-    margin-top: 50px;
-    background-color: var(--prim-color);
-    color: white;
-    /* font-family:'Baloo Bhai 2'; */
-    border-style: none;
-    width: 170px;
-    height: 25px;
-    margin-bottom: 20px;
-}
-
-#forgot-pass a {
-    font-family:var(--prim-font);
-    color: var(--prim-color);
-    font-size: 15px;
-    text-decoration: none;
-}
-
-@media screen and (min-width:380px) and (max-width:420px) {
-    .login-box {
-        height: 540px;
-        width: 300px;
-    }
-}
-
-@media screen and (min-width:450px) and (max-width:900px) {
-    .login-box {
-        height: 670px;
-        width: 490px;
-    }
-
-    #login-heading {
-        font-size: 80px;
-    }
-
-    .box-login {
-        height: 50px;
-        width: 350px;
-    }
-
-    #submit-btn {
-        width: 350px;
-        height: 50px;
-        font-size: 20px;
-    }
-
-    #forgot-pass a {
-        font-size: 20px;
-    }
-
-
 }
