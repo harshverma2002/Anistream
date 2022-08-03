@@ -39,6 +39,11 @@
     top:0px;
 }
 
+#title{
+    display: flex;
+    align-items: center;
+}
+
 /* navbar-image */
 #navbar img{
     height:60px;
@@ -49,13 +54,13 @@
 #navbar img:hover{cursor:pointer;}
 
 /* navbar-title */
-#navbar div{
+#title div{
     color: white;
     font-family:var(--nav-title-font);
     font-size: 2.0rem;
 }
 
-#navbar div:hover{cursor:pointer;}
+#title div:hover{cursor:pointer;}
 
 /* navbar-links-container */
 #navbar ul{
@@ -343,9 +348,169 @@ footer ul li a:hover{
 
 /***************************************************FOOTER  ENDS*******************************************************************************/
 
+/************************************** Media queries for index.html ****************************************************/
 
-/*******************************************************************************************************************************************************************/
-/*-------------------------------------------- login.html---------------------------------- */
+@media screen and (max-width:1135px) {
+    #navbar{
+        flex-direction: column;
+    }
+
+    #title{
+        position: relative;
+        right:150px;
+    }
+    
+    #navbar ul li a{
+        padding:0px 20px;
+    }
+
+
+    #login-btn{
+        position: relative;
+        left:150px;
+        bottom:85px;
+    }
+
+    #signin-btn{
+        position: relative;
+        left:240px;
+        bottom:119px;
+
+    }
+
+    #slideshow-container div{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:730px) {
+    .misc-links{
+        margin-left:5px;
+    }
+
+    .misc-links li a{
+        font-size:10px;
+    }
+}
+
+@media screen and (max-width:590px) {
+    #login-btn{
+        position: relative;
+        left:100px;
+        bottom:85px;
+    }
+
+    #signin-btn{
+        position: relative;
+        left:190px;
+        bottom:119px;
+    }
+
+    #slideshow-container div{
+        font-size: 1rem;
+    }
+
+    .misc-links li{
+        padding :0px 10px;
+    }
+}
+
+@media screen and (max-width:480px){
+
+    #title{
+        position: relative;
+        right:100px;
+    }
+
+    #navbar ul li{
+        font-size:1rem;
+    }
+
+    #login-btn{
+        position: relative;
+        left:50px;
+        bottom:80px;
+        font-size:0.5rem;
+    }
+
+    #signin-btn{
+        position: relative;
+        left:140px;
+        bottom:114px;
+        font-size:0.5rem;
+    }
+    
+    .misc-links li a{
+        font-size:6px;
+    }
+
+    #pop-anime-heading{
+        font-size:30px;
+    }
+
+    .popanime-titles-container div img{
+        height:210px;
+        width:350px;
+    }
+    
+}
+
+@media screen and (max-width:390px){
+
+    #navbar img{}
+
+    #slideshow-container div{
+        font-size: 0.8rem;
+    }
+
+    .popanime-titles-container div img{
+        height:120px;
+        width:260px;
+    }
+
+    #navbar a button{
+        padding:3px 10px;
+        margin:0px 0px;
+        font-size: 0.8rem;
+    }
+
+    #login-btn{
+        top:-73px;
+    }
+
+    #signin-btn{
+        position: relative;
+        top:-100px;
+        left:115px;
+    }
+
+    #navbar ul li{
+        font-size : 0.8rem;
+    }
+
+    footer img{
+        margin-left:0px;
+        height:40px;
+        width:30px;
+    }
+
+    footer div{
+        font-size:1rem;
+    }
+
+    .plans-container{
+        margin:10px 0px;
+        padding: 15px 30px;
+        width:280px;
+    }
+}
+
+/************************************* media queires end *************************************888*/
+
+
+/******************************************************************************************************************************************************************
+  ******NEW PAGE*****  ******NEW PAGE***** ******NEW PAGE***** ******NEW PAGE***** ******NEW PAGE*****  ******NEW PAGE******  *****NEW PAGE*****
+-------------------------------------------- login.html---------------------------------- */
 
 
 #login-body {
@@ -399,4 +564,12 @@ footer ul li a:hover{
     color: var(--prim-color);
     font-size: 15px;
     text-decoration: none;
+}
+
+@media only screen and (max-width:1135px) {
+    #navbar{
+        height:100px;
+        width:100%;
+        
+    }
 }
