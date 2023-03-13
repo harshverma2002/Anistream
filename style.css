@@ -186,7 +186,6 @@
     height: 250px;
     width:  400px;
 }
-
 .popanime-titles-container div img:hover{
     transition-duration: 0.4s;
     cursor:pointer;
@@ -529,7 +528,7 @@ footer ul li a:hover{
 
     background-color: white;
     width: 250px;
-    height: 450px;
+    height: 500px;
 
     border-radius: 25px;
 }
@@ -544,12 +543,12 @@ footer ul li a:hover{
 }
 
 .box-login {
-    margin-top: 30px;
+    margin-top: 0px;
     height: 25px;
 }
 
 #submit-btn {
-    margin-top: 50px;
+    margin-top: 30px;
     background-color: var(--prim-color);
     color: white;
     /* font-family:'Baloo Bhai 2'; */
