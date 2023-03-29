@@ -1,26 +1,30 @@
 /* Import all fonts */
-@font-face {font-family:'Baloo Bhai 2';src: url('fonts/BalooBhai2-VariableFont_wght.ttf');}
-@font-face {font-family: 'Yanone Kaffeesatz';src: url('fonts/YanoneKaffeesatz-VariableFont_wght.ttf');}
+@font-face {
+  font-family: "Baloo Bhai 2";
+  src: url("fonts/BalooBhai2-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Yanone Kaffeesatz";
+  src: url("fonts/YanoneKaffeesatz-VariableFont_wght.ttf");
+}
 
 /* All variables */
-:root{
-    --prim-font:'Baloo Bhai 2';
-    --nav-color:rgb(25, 102, 211);
-    --prim-color:rgb(64, 124, 209);
-    --nav-title-font:'Yanone Kaffeesatz';
+:root {
+  --prim-font: "Baloo Bhai 2";
+  --nav-color: rgb(25, 102, 211);
+  --prim-color: rgb(64, 124, 209);
+  --nav-title-font: "Yanone Kaffeesatz";
 }
 
 /* CSS reset */
-*{
-    margin:0;
-    padding:0;
-    border-style: none;
+* {
+  margin: 0;
+  padding: 0;
+  border-style: none;
 }
 
 /*******************************************************************************************************************************************************************/
 /*-------------------------------------------- index.html---------------------------------- */
-
-
 
 /*********************************************************************************************************************************************************************
                                 -----------------NAVBAR--------------
@@ -28,84 +32,87 @@
 
 /* Navbar-box */
 
-#navbar{
-    display: flex;
-    align-items: center;
-    background-color: var(--nav-color);
-    height: 80px;
-    width: 100%;
+#navbar {
+  display: flex;
+  align-items: center;
+  background-color: var(--nav-color);
+  height: 80px;
+  width: 100%;
 
-    position: sticky;
-    top:0px;
+  position: sticky;
+  top: 0px;
 }
 
-#title{
-    display: flex;
-    align-items: center;
+#title {
+  display: flex;
+  align-items: center;
 }
 
 /* navbar-image */
-#navbar img{
-    height:60px;
-    width: 60px;
-    margin-left: 20px;
+#navbar img {
+  height: 60px;
+  width: 60px;
+  margin-left: 20px;
 }
 
-#navbar img:hover{cursor:pointer;}
+#navbar img:hover {
+  cursor: pointer;
+}
 
 /* navbar-title */
-#title div{
-    color: white;
-    font-family:var(--nav-title-font);
-    font-size: 2.0rem;
+#title div {
+  color: white;
+  font-family: var(--nav-title-font);
+  font-size: 2rem;
 }
 
-#title div:hover{cursor:pointer;}
+#title div:hover {
+  cursor: pointer;
+}
 
 /* navbar-links-container */
-#navbar ul{
-    display: flex;
-    list-style-type: none;
-    margin:auto;
+#navbar ul {
+  display: flex;
+  list-style-type: none;
+  margin: auto;
 }
 
 /* navbar-links-item-container */
-#navbar ul li{
-    font-size: 1.5rem;
+#navbar ul li {
+  font-size: 1.5rem;
 }
 
 /* navbar-links-item */
-#navbar ul li a{
-    text-decoration: none;
-    color: white;
-    font-family: var(--prim-font);
-    padding: 0px 50px;
+#navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: var(--prim-font);
+  padding: 0px 50px;
 }
 
-#navbar ul li a:hover{
-    text-decoration: underline;
+#navbar ul li a:hover {
+  text-decoration: underline;
 }
 
 /* user-buttons*/
 #navbar a button {
-    background-color: white;
-    margin:0px 20px;
-    padding:3px 15px;
-    border-radius: 25px;
-    font-weight: bolder;
-    font-size: 1.1rem;
-    font-family: var(--prim-font);
-    color: var(--nav-color);
-    text-decoration: none;
+  background-color: white;
+  margin: 0px 20px;
+  padding: 3px 15px;
+  border-radius: 25px;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  font-family: var(--prim-font);
+  color: var(--nav-color);
+  text-decoration: none;
 }
 
-#navbar a button:hover{
-    transition-duration: 0.27s;
-    cursor: pointer;
-    color:white;
-    background-color: black;
+#navbar a button:hover {
+  transition-duration: 0.27s;
+  cursor: pointer;
+  color: white;
+  background-color: black;
 }
-
 
 /************************************************************NAVBAR ENDS*******************************************************************************/
 
@@ -114,31 +121,31 @@
 *********************************************************************************************************************************************************************/
 
 /* slideshow-container */
-#slideshow-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: black;
-    width:100%;
-    height: 520px;
+#slideshow-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: 520px;
 }
 
 /* slideshow-container-heading */
-#slideshow-container div{
-    color: white;
-    font-family: var(--prim-font);
-    font-size: 2rem;
-    padding-top: 15px;
-    padding-bottom: 20px;
+#slideshow-container div {
+  color: white;
+  font-family: var(--prim-font);
+  font-size: 2rem;
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 
 /* slideshow-container-image */
-#slideshow-container img{
-    height:380px;
+#slideshow-container img {
+  height: 380px;
 }
 
-#slideshow-container img:hover{
-    cursor: pointer;
+#slideshow-container img:hover {
+  cursor: pointer;
 }
 
 /***************************************************SLIDESHOW ENDS*******************************************************************************/
@@ -147,70 +154,69 @@
                                 -----------------POPULAR ANIME--------------
 *********************************************************************************************************************************************************************/
 /* The heading */
-#pop-anime-heading{
-    font-size: 40px;
-    font-family: var(--prim-font);
-    font-weight: bolder;
-    color:white;
-    display: block;
-    text-align: center;
+#pop-anime-heading {
+  font-size: 40px;
+  font-family: var(--prim-font);
+  font-weight: bolder;
+  color: white;
+  display: block;
+  text-align: center;
 }
 
 /* the horizontal rule */
-#pop-anime-heading-divider{
-    border: 2px solid white;
-    background-color: white;
-    border-radius: 10px;
-    width: 50%;
-    margin: auto;
-    margin-bottom: 70px;
+#pop-anime-heading-divider {
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 10px;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 70px;
 }
 
 /* Parent container */
-.popanime-container{
-    background-color: var(--prim-color);
-    padding-top: 40px;
-
+.popanime-container {
+  background-color: var(--prim-color);
+  padding-top: 40px;
 }
 
 /* container which contains the title-blocks */
-.popanime-titles-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.popanime-titles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* image of title */
-.popanime-titles-container div img{
-    margin: 20px 10px;
-    height: 250px;
-    width:  400px;
+.popanime-titles-container div img {
+  margin: 20px 10px;
+  height: 250px;
+  width: 400px;
 }
 
-.popanime-titles-container div img:hover{
-    transition-duration: 0.4s;
-    cursor:pointer;
-    box-shadow: 5px 5px 10px 5px black;
+.popanime-titles-container div img:hover {
+  transition-duration: 0.4s;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px 5px black;
 }
 
 /* title block : container of a title and its name */
-.title-container{
+.title-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding:10px 10px;
+  padding: 10px 10px;
 }
 
 /* name of show */
-.title-container div{
-    font-family: var(--prim-font);
-    font-size:25px;
-    font-weight: bolder;
-    color:white;
+.title-container div {
+  font-family: var(--prim-font);
+  font-size: 25px;
+  font-weight: bolder;
+  color: white;
 }
 
-.title-container div:hover{
-    cursor: pointer;
+.title-container div:hover {
+  cursor: pointer;
 }
 
 /***************************************************POPULAR ANIME ENDS*******************************************************************************/
@@ -219,81 +225,80 @@
                                 -----------------PLANS--------------
 *********************************************************************************************************************************************************************/
 
-#plan-heading{
-    font-size: 40px;
-    font-family: var(--prim-font);
-    font-weight: bolder;
-    color:var(--prim-color);
-    text-align: center;
-    margin-top: 60px;
+#plan-heading {
+  font-size: 40px;
+  font-family: var(--prim-font);
+  font-weight: bolder;
+  color: var(--prim-color);
+  text-align: center;
+  margin-top: 60px;
 }
 
 /* the horizontal rule */
-#plans-heading-divider{
-    border: 2px solid var(--prim-color);
-    background-color: var(--prim-color);
-    border-radius: 10px;
-    width: 20%;
-    margin: auto;
-    margin-bottom: 70px;
+#plans-heading-divider {
+  border: 2px solid var(--prim-color);
+  background-color: var(--prim-color);
+  border-radius: 10px;
+  width: 20%;
+  margin: auto;
+  margin-bottom: 70px;
 }
 
 /* Parent container : contains the the plans boxes*/
-.plans-container-parent{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 100px;
+.plans-container-parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 100px;
 }
 
 /* plan container : contains the individual plans  */
-.plans-container{
-    box-sizing: border-box;
-    border: 3px solid var(--prim-color);
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px 1px #888888;
-    margin: 20px 50px;
-    padding: 20px 40px;
-    padding-bottom: 30px;
-    width:290px;
-    color: var(--prim-color);
-    font-family: var(--prim-font);
+.plans-container {
+  box-sizing: border-box;
+  border: 3px solid var(--prim-color);
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 1px #888888;
+  margin: 20px 50px;
+  padding: 20px 40px;
+  padding-bottom: 30px;
+  width: 290px;
+  color: var(--prim-color);
+  font-family: var(--prim-font);
 }
 
-.plans-container:hover{
-    cursor:pointer;
-    transition-duration: 0.25s;
-    color:white;
-    background-color: var(--prim-color);
+.plans-container:hover {
+  cursor: pointer;
+  transition-duration: 0.25s;
+  color: white;
+  background-color: var(--prim-color);
 }
 
 /* headings of plans */
-#planbox-heading{
-    
-    font-size:45px;
-    font-weight: bolder;
-    text-align: center;
+#planbox-heading {
+  font-size: 45px;
+  font-weight: bolder;
+  text-align: center;
 }
 
 /* price of plans */
-#planbox-cost{
-    font-size: 30px;
-    font-style: italic;
-    text-align: center;
-    margin-bottom: 60px;
-    color: black;
+#planbox-cost {
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 60px;
+  color: black;
 }
 
 /* list container of specfications */
-.plans-container ul{
-    font-weight:bold;
-    font-size: 20px;
-    padding-left: 5px;
+.plans-container ul {
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 5px;
 }
 
 /* indivdual specs */
-.plans-container ul li{
-    margin:5px 0px;
+.plans-container ul li {
+  margin: 5px 0px;
 }
 
 /***************************************************PLANS ENDS*******************************************************************************/
@@ -302,274 +307,267 @@
                                 -----------------FOOTER--------------
 *********************************************************************************************************************************************************************/
 
-footer{
-    display: flex;
-    align-items: center;
-    background-color: var(--nav-color);
-    width:100%;
+footer {
+  display: flex;
+  align-items: center;
+  background-color: var(--nav-color);
+  width: 100%;
 }
 
-footer img{
-    height:50px;
-    width: 50px;
-    margin-left: 20px;
+footer img {
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
 }
 
-footer div{
-    color: white;
-    font-family:var(--nav-title-font);
-    font-size: 1.5rem;
+footer div {
+  color: white;
+  font-family: var(--nav-title-font);
+  font-size: 1.5rem;
 }
 
-footer img,footer div:hover{
-    cursor: pointer;
+footer img,
+footer div:hover {
+  cursor: pointer;
 }
 
-footer ul{
-    display:flex;
-    list-style: none;
-    margin-left: 100px;
+footer ul {
+  display: flex;
+  list-style: none;
+  margin-left: 100px;
 }
 
-footer ul li{
-    padding : 0px 20px;
+footer ul li {
+  padding: 0px 20px;
 }
 
-footer ul li a{
-    text-decoration: none;
-    color:white;
-    font-family: var(--prim-font);
-    font-weight: bold;
+footer ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: var(--prim-font);
+  font-weight: bold;
 }
 
-footer ul li a:hover{
-    text-decoration: underline;
+footer ul li a:hover {
+  text-decoration: underline;
 }
 
 /***************************************************FOOTER  ENDS*******************************************************************************/
 
 /************************************** Media queries for index.html ****************************************************/
 
-@media screen and (max-width:1135px) {
-    #navbar{
-        flex-direction: column;
-    }
+@media screen and (max-width: 1135px) {
+  #navbar {
+    flex-direction: column;
+  }
 
-    #title{
-        position: relative;
-        right:150px;
-    }
-    
-    #navbar ul li a{
-        padding:0px 20px;
-    }
+  #title {
+    position: relative;
+    right: 150px;
+  }
 
+  #navbar ul li a {
+    padding: 0px 20px;
+  }
 
-    #login-btn{
-        position: relative;
-        left:150px;
-        bottom:85px;
-    }
+  #login-btn {
+    position: relative;
+    left: 150px;
+    bottom: 85px;
+  }
 
-    #signin-btn{
-        position: relative;
-        left:240px;
-        bottom:119px;
+  #signin-btn {
+    position: relative;
+    left: 240px;
+    bottom: 119px;
+  }
 
-    }
-
-    #slideshow-container div{
-        font-size: 1.5rem;
-    }
+  #slideshow-container div {
+    font-size: 1.5rem;
+  }
 }
 
-@media screen and (max-width:730px) {
-    .misc-links{
-        margin-left:5px;
-    }
+@media screen and (max-width: 730px) {
+  .misc-links {
+    margin-left: 5px;
+  }
 
-    .misc-links li a{
-        font-size:10px;
-    }
+  .misc-links li a {
+    font-size: 10px;
+  }
 }
 
-@media screen and (max-width:590px) {
-    #login-btn{
-        position: relative;
-        left:100px;
-        bottom:85px;
-    }
+@media screen and (max-width: 590px) {
+  #login-btn {
+    position: relative;
+    left: 100px;
+    bottom: 85px;
+  }
 
-    #signin-btn{
-        position: relative;
-        left:190px;
-        bottom:119px;
-    }
+  #signin-btn {
+    position: relative;
+    left: 190px;
+    bottom: 119px;
+  }
 
-    #slideshow-container div{
-        font-size: 1rem;
-    }
+  #slideshow-container div {
+    font-size: 1rem;
+  }
 
-    .misc-links li{
-        padding :0px 10px;
-    }
+  .misc-links li {
+    padding: 0px 10px;
+  }
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width: 480px) {
+  #title {
+    position: relative;
+    right: 100px;
+  }
 
-    #title{
-        position: relative;
-        right:100px;
-    }
+  #navbar ul li {
+    font-size: 1rem;
+  }
 
-    #navbar ul li{
-        font-size:1rem;
-    }
+  #login-btn {
+    position: relative;
+    left: 50px;
+    bottom: 80px;
+    font-size: 0.5rem;
+  }
 
-    #login-btn{
-        position: relative;
-        left:50px;
-        bottom:80px;
-        font-size:0.5rem;
-    }
+  #signin-btn {
+    position: relative;
+    left: 140px;
+    bottom: 114px;
+    font-size: 0.5rem;
+  }
 
-    #signin-btn{
-        position: relative;
-        left:140px;
-        bottom:114px;
-        font-size:0.5rem;
-    }
-    
-    .misc-links li a{
-        font-size:6px;
-    }
+  .misc-links li a {
+    font-size: 6px;
+  }
 
-    #pop-anime-heading{
-        font-size:30px;
-    }
+  #pop-anime-heading {
+    font-size: 30px;
+  }
 
-    .popanime-titles-container div img{
-        height:210px;
-        width:350px;
-    }
-    
+  .popanime-titles-container div img {
+    height: 210px;
+    width: 350px;
+  }
 }
 
-@media screen and (max-width:390px){
+@media screen and (max-width: 390px) {
+  #navbar img {
+  }
 
-    #navbar img{}
+  #slideshow-container div {
+    font-size: 0.8rem;
+  }
 
-    #slideshow-container div{
-        font-size: 0.8rem;
-    }
+  .popanime-titles-container div img {
+    height: 120px;
+    width: 260px;
+  }
 
-    .popanime-titles-container div img{
-        height:120px;
-        width:260px;
-    }
+  #navbar a button {
+    padding: 3px 10px;
+    margin: 0px 0px;
+    font-size: 0.8rem;
+  }
 
-    #navbar a button{
-        padding:3px 10px;
-        margin:0px 0px;
-        font-size: 0.8rem;
-    }
+  #login-btn {
+    top: -73px;
+  }
 
-    #login-btn{
-        top:-73px;
-    }
+  #signin-btn {
+    position: relative;
+    top: -100px;
+    left: 115px;
+  }
 
-    #signin-btn{
-        position: relative;
-        top:-100px;
-        left:115px;
-    }
+  #navbar ul li {
+    font-size: 0.8rem;
+  }
 
-    #navbar ul li{
-        font-size : 0.8rem;
-    }
+  footer img {
+    margin-left: 0px;
+    height: 40px;
+    width: 30px;
+  }
 
-    footer img{
-        margin-left:0px;
-        height:40px;
-        width:30px;
-    }
+  footer div {
+    font-size: 1rem;
+  }
 
-    footer div{
-        font-size:1rem;
-    }
-
-    .plans-container{
-        margin:10px 0px;
-        padding: 15px 30px;
-        width:280px;
-    }
+  .plans-container {
+    margin: 10px 0px;
+    padding: 15px 30px;
+    width: 280px;
+  }
 }
 
 /************************************* media queires end *************************************888*/
-
 
 /******************************************************************************************************************************************************************
   ******NEW PAGE*****  ******NEW PAGE***** ******NEW PAGE***** ******NEW PAGE***** ******NEW PAGE*****  ******NEW PAGE******  *****NEW PAGE*****
 -------------------------------------------- login.html---------------------------------- */
 
-
 #login-body {
-    background-color: var(--prim-color);
+  background-color: var(--prim-color);
 }
 
 .login-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family:var(--prim-font);
-    font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--prim-font);
+  font-weight: bolder;
 
-    margin: auto;
-    margin-top: 17vh;
+  margin: auto;
+  margin-top: 17vh;
 
-    background-color: white;
-    width: 250px;
-    height: 450px;
+  background-color: white;
+  width: 250px;
+  height: 450px;
 
-    border-radius: 25px;
+  border-radius: 25px;
 }
 
 #login-heading {
-    color: var(--prim-color);
-    /* font-family:'Baloo Bhai 2';
+  color: var(--prim-color);
+  /* font-family:'Baloo Bhai 2';
     font-weight: bolder; */
-    font-size: 40px;
-    margin-top: 50px;
-
+  font-size: 40px;
+  margin-top: 50px;
 }
 
 .box-login {
-    margin-top: 30px;
-    height: 25px;
+  margin-top: 30px;
+  height: 25px;
 }
 
 #submit-btn {
-    margin-top: 50px;
-    background-color: var(--prim-color);
-    color: white;
-    /* font-family:'Baloo Bhai 2'; */
-    border-style: none;
-    width: 170px;
-    height: 25px;
-    margin-bottom: 20px;
+  margin-top: 50px;
+  background-color: var(--prim-color);
+  color: white;
+  /* font-family:'Baloo Bhai 2'; */
+  border-style: none;
+  width: 170px;
+  height: 25px;
+  margin-bottom: 20px;
 }
 
 #forgot-pass a {
-    font-family:var(--prim-font);
-    color: var(--prim-color);
-    font-size: 15px;
-    text-decoration: none;
+  font-family: var(--prim-font);
+  color: var(--prim-color);
+  font-size: 15px;
+  text-decoration: none;
 }
 
-@media only screen and (max-width:1135px) {
-    #navbar{
-        height:100px;
-        width:100%;
-        
-    }
+@media only screen and (max-width: 1135px) {
+  #navbar {
+    height: 100px;
+    width: 100%;
+  }
 }
